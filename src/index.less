@@ -1,0 +1,116 @@
+@gray: #A5A5AF;
+@dark-green: #015249;
+@light-blue: #77C9D4;
+@light-green: #57BC90;
+@off-white: #F5FFFA;
+
+body {
+  background-color: @light-blue;
+  color: @dark-green;
+  font-family: Tahoma, Geneva, sans-serif;
+  text-align: center;
+
+  .off-white-background {
+    height: inherit;
+    background-color: @off-white;
+  }
+
+  .warning {
+    background-color: @light-green;
+    color: @off-white;
+    padding: .25rem;
+    h6 {
+      margin: .2rem 0;
+    }
+  }
+}
+
+h1, h2 {
+  color: @dark-green;
+}
+
+h4 {
+  margin: 1rem 0;
+}
+
+ul {
+  color: @off-white;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  li {
+    background-color: @gray;
+    list-style: none;
+    margin: .5rem;
+    padding: .5rem;
+    width: 50%;
+    a {
+      color: @dark-green;
+      font-weight: bolder;
+    }
+    &.bold-green {
+      background-color: @light-green;
+      color: @off-white;
+      font-weight: bolder;
+    }
+  }
+}
+
+.allergen-list-form {
+  label {
+    margin: 0 .25rem;
+  }
+}
+
+.btn {
+  background-color: @gray;
+  color: @off-white;
+  border-radius: 5px;
+  height: 1.5rem;
+  margin: .5rem;
+  &.big {
+    background-color: @light-green;
+    height: 2rem;
+    font-size: 1rem;
+    &.blue {
+      background-color: @light-blue;
+    }
+    &.green {
+      background-color: @light-green;
+    }
+  }
+}
+
+.emphatic-border {
+  border: 1px solid #808080;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row-to-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-field {
+  height: 1.3rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .flex-row-to-column {
+    flex-direction: column;
+    align-items: flex-start;
+    &.centered {
+      align-items: center;
+    }
+  }
+}
